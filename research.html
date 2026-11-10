@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research · Samiha Alam</title>
+  <meta name="description" content="Samiha Alam — Civil and Environmental Engineering, Islamic University of Technology (IUT), Dhaka. 2026 graduate. Undergraduate thesis on comparing textile wastewater treatment options by multi-criteria decision-making.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+
+  <aside class="side">
+    <img class="portrait" src="profile.jpg" alt="Samiha Alam">
+    <h1 class="name"><a href="index.html">Samiha Alam</a></h1>
+    <p class="affil">
+      Dept. of Civil and Environmental Engineering<br>
+      Islamic University of Technology (IUT)<br>
+      Dhaka, Bangladesh
+    </p>
+
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html" class="on" aria-current="page">Research</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+    </nav>
+
+    <p class="links">
+      <a href="mailto:samihaalam@iut-dhaka.edu">Email</a>
+      <a href="CV.pdf">CV (PDF)</a>
+    </p>
+  </aside>
+
+  <main class="main" id="main">
+    <h2 class="page-title">Research &amp; Thesis</h2>
+
+<h3>Undergraduate thesis</h3>
+<p><strong>Treatment of real textile wastewater by electrocoagulation, solar TiO<sub>2</sub>
+photocatalysis and multimedia filtration: a comparative multi-criteria assessment</strong></p>
+<p class="meta">
+Dept. of Civil and Environmental Engineering, IUT &middot; Supervisor:
+<strong>Dr. Amimul Ahsan</strong>, Associate Professor &middot; Team: Samiha Alam,
+Munwar Mahfuze Rakib, Alif Abedin
+</p>
+
+<div class="callout">
+<p><strong>The short version.</strong> Three ways of treating the same real textile effluent,
+tested at many settings and ranked together on several criteria at once. The best single
+option turned out to be solar photocatalysis, and the recommended treatment is a hybrid train
+that uses each technology for what it does best.</p>
+</div>
+
+<h4>The question</h4>
+<p>Studies usually report one technology at one best setting, judged on pollutant removal
+alone. A plant has to choose between technologies, and the choice depends on more than removal
+alone. We asked which treatment route is best for real effluent once several criteria are
+weighed together.</p>
+
+<h4>What we did</h4>
+<p>The wastewater was real effluent from the central effluent treatment plant of a textile
+group at Chandora, Kaliakoir, Gazipur &mdash; not a synthetic dye solution.</p>
+<ul>
+<li><strong>Electrocoagulation</strong> &mdash; aluminium and zinc electrodes in both
+  polarities, run with no salt, NaCl and KCl as the supporting electrolyte, at several doses.</li>
+<li><strong>Photocatalysis</strong> &mdash; TiO<sub>2</sub> at several doses, under sunlight and
+  in the dark as a control.</li>
+<li><strong>Multimedia filtration</strong> &mdash; a corncob biochar filter cascade, varying the
+  contact time per stage.</li>
+<li><strong>Measurement</strong> &mdash; twelve water-quality parameters, including COD,
+  BOD<sub>5</sub>, TOC, TSS, TDS, DO, colour and turbidity, checked against the Bangladesh
+  Environment Conservation Rules (ECR) 2023 limits.</li>
+<li><strong>Ranking</strong> &mdash; 120 treatment options scored on 13 criteria and ranked
+  with TOPSIS, VIKOR and PROMETHEE&nbsp;II, built as a Python framework. Tier&nbsp;1 ranks each
+  technology against its own settings; Tier&nbsp;2 pools every alternative and ranks them
+  together.</li>
+<li><strong>Machine learning</strong> &mdash; Random Forest and XGBoost with SHAP to identify the
+  most influential treatment parameters.</li>
+</ul>
+
+<h4>What we found</h4>
+<ul>
+<li><strong>The Tier&nbsp;2 consensus winner was solar photocatalysis</strong> at 1.25&nbsp;g/L
+  TiO<sub>2</sub> over 28 days, across all 120 options.</li>
+<li><strong>A hybrid train works best.</strong> Multimedia filtration (4&nbsp;h per stage), then
+  solar photocatalysis, then low-dose Al&ndash;Zn/NaCl electrocoagulation as a polishing step.</li>
+</ul>
+
+<div class="callout">
+<p><strong>Status:</strong> Thesis defended 2026. Two journal manuscripts and one accepted
+conference abstract came out of this work &mdash; see <a href="publications.html">Publications</a>. Happy to share the full
+thesis on request.</p>
+</div>
+<hr>
+
+<h3>Methods and tools</h3>
+<ul>
+<li><strong>Water and wastewater</strong> &mdash; electrocoagulation, photocatalysis, multimedia
+  filtration, treatment of real industrial effluent</li>
+<li><strong>Decision science</strong> &mdash; TOPSIS, VIKOR, PROMETHEE&nbsp;II, criteria matrices,
+  two-tier ranking</li>
+<li><strong>Scientific computing</strong> &mdash; Python, MATLAB, C, Google Colab, Microsoft
+  Excel, PCA and statistical analysis, Random Forest, XGBoost, SHAP</li>
+<li><strong>Hydraulics and drainage</strong> &mdash; EPANET and WNTR (water distribution), SWMM
+  (stormwater)</li>
+<li><strong>Other</strong> &mdash; SAP2000, ETABS, AutoCAD, ArcGIS, E-Tank</li>
+</ul>
+
+    <footer class="foot">
+      © 2026 Samiha Alam · Built with Jekyll, hosted on GitHub Pages
+    </footer>
+  </main>
+
+</div>
+</body>
+</html>
