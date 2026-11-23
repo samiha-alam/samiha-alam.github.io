@@ -1,0 +1,19 @@
+/* Justified body text — loaded after style.css */
+.main p:not(.meta):not(.affil):not(.links),
+.main ul:not(.news) li,
+.main .callout p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+}
+/* keep headings, metadata, tags and the sidebar ragged-right */
+.main h1, .main h2, .main h3, .main .meta, .main .tags, .main .news, .side {
+  text-align: left;
+  hyphens: manual;
+}
+/* narrow screens: justification looks gappy, fall back to left */
+@media (max-width: 600px) {
+  .main p, .main ul li { text-align: left; }
+}
